@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-class Trailer extends StatefulWidget {
-  final String videoPath;
-  const Trailer(this.videoPath, {super.key});
+class testVideo extends StatefulWidget {
+  const testVideo({super.key});
 
   @override
-  State<Trailer> createState() => _TrailerState();
+  State<testVideo> createState() => _testVideoState();
 }
 
-class _TrailerState extends State<Trailer> {
+class _testVideoState extends State<testVideo> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset(widget.videoPath)
-      ..initialize().then((_) {
-        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
-        setState(() {});
-      });
+    _controller =
+        VideoPlayerController.asset("assets/video/trailer/trailer_joker.mp4")
+          ..initialize().then((_) {
+            // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
+            setState(() {});
+          });
   }
 
   @override
