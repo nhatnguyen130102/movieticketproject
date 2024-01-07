@@ -8,10 +8,8 @@ class MovieModel {
   late String director;
   late String storyLine;
   late String image;
-  late String imageLogo;
   late List<MovieCastModel> castList;
   late String beginAt;
-  late String endAt;
   late String radian;
   late List<String> trailer;
 
@@ -23,10 +21,8 @@ class MovieModel {
     required this.director,
     required this.storyLine,
     required this.image,
-    required this.imageLogo,
     required this.castList,
     required this.beginAt,
-    required this.endAt,
     required this.radian,
     required this.trailer,
   });
