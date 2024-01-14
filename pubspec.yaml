@@ -42,6 +42,7 @@ dependencies:
   gap: ^3.0.1
   video_player: ^2.8.1
   chewie: ^1.7.4
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -100,5 +101,21 @@ flutter:
         weight: 700
       - asset: assets/font/OpenSans-ExtraBold.ttf
         weight: 800
+  - family: SVN
+    fonts:
+      - asset: assets/font/SVN-Sigokae.otf
+        weight: 400
+  - family: JosefinSans
+    fonts:
+      - asset: assets/font/JosefinSans-Italic-VariableFont_wght.tff
+        weight: 400
+      - asset: assets/font/JosefinSans-VariableFont_wght.tff
+        weight: 400
+
+
+      
+
+
+      
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -12,15 +12,15 @@ class MovieData {
           name: 'Kẻ Ăn Hồn',
           rating: 4.9,
           genre: ["Kinh dị"],
-          beginAt: '15/12/2023',
+          beginAt: DateTime(2024, 12, 15),
           radian: '1h',
           director: 'Trần Hữu Tấn',
           storyLine:
               'Phim về hàng loạt cái chết bí ẩn ở Làng Địa Ngục, nơi có ma thuật cổ xưa: 5 mạng đổi bình Rượu Sọ Người. Thập Nương - cô gái áo đỏ là kẻ nắm giữ bí thuật luyện nên loại rượu mạnh nhất',
           image: "assets/image/ke-an-hon.jpg",
           trailer: [
-            "assets/video/trailer/trailer_joker.mp4",
-            "assets/video/trailer/trailer_joker.mp4",
+            // "assets/video/trailer/trailer_joker.mp4",
+            // "assets/video/trailer/trailer_joker.mp4",
             "assets/video/trailer/trailer_joker.mp4",
             "assets/video/trailer/trailer_keanhon2.mp4",
           ],
@@ -49,7 +49,7 @@ class MovieData {
           name: 'Arkie Và Ngày Mặt Trời Mất Tích',
           rating: 4.7,
           genre: ["Hoạt hình", "Phiêu lưu"],
-          beginAt: '05/01/2023',
+          beginAt: DateTime(2024, 12, 15),
           radian: '93m',
           director: 'Ricard Cussó',
           storyLine:
@@ -81,7 +81,7 @@ class MovieData {
           name: 'Aquaman',
           rating: 4.8,
           genre: ["Hành động", "Phiêu lưu", "Viễn tưởng"],
-          beginAt: '20/12/2023',
+          beginAt: DateTime(20234, 12, 15),
           radian: '1h24m',
           director: 'James Wan',
           storyLine:
@@ -113,7 +113,7 @@ class MovieData {
           name: 'Joker',
           rating: 4.3,
           genre: ["Tội phạm", "Tâm lý"],
-          beginAt: '1/1/2024',
+          beginAt: DateTime(2023, 12, 15),
           radian: '1h30m',
           director: 'Todd Phillips',
           storyLine:
@@ -149,7 +149,7 @@ class MovieData {
           name: 'Hành Tinh Khỉ',
           rating: 2.8,
           genre: ["Hành động", "Phiêu lưu", "Giả tưởng"],
-          beginAt: '1/1/2024',
+          beginAt: DateTime(2023, 12, 15),
           radian: '1h19m',
           director: 'Tim Burton',
           storyLine:

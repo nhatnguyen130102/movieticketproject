@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:project2/screen/home/modules/components/star_component.dart';
-import 'package:project2/screen/home/modules/movie_detail/movie_detail.dart';
+import 'package:project2/screen/movie_detail/movie_detail.dart';
 
 import '../../../constants/constants.dart';
 import '../../../data/data.dart';

@@ -11,3 +11,27 @@ const Color black = Colors.black;
 const Color grey = Colors.grey;
 const Color darker = Color(0xFF000033);
 const Color darker2 = Color(0xFF000066);
+
+const TextStyle myTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 16.0,
+  fontWeight: FontWeight.normal,
+  fontFamily: 'SVN-Sigokae.otf',
+  //Thêm các thuộc tính khác của TextStyle nếu cần
+);
+
+const TextStyle myTextStyle2 = TextStyle(
+  color: Colors.white,
+  fontSize: 24.0,
+  fontWeight: FontWeight.normal,
+  fontFamily: 'JosefinSans-Italic-VariableFont_wght.tff',
+  //Thêm các thuộc tính khác của TextStyle nếu cần
+);
+
+const TextStyle myTextStyle3 = TextStyle(
+  color: Colors.white,
+  fontSize: 32.0,
+  fontWeight: FontWeight.normal,
+  fontFamily: 'JosefinSans-VariableFont_wght.tff',
+  //Thêm các thuộc tính khác của TextStyle nếu cần
+);

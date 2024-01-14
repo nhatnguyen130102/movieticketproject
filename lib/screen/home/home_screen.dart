@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project2/constants/constants.dart';
@@ -11,8 +9,6 @@ import 'modules/header.dart';
 import 'modules/promo.dart';
 import 'modules/search.dart';
 import 'modules/slider.dart';
-
-
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -64,7 +60,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
-

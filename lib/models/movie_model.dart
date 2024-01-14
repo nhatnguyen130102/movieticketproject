@@ -9,7 +9,7 @@ class MovieModel {
   late String storyLine;
   late String image;
   late List<MovieCastModel> castList;
-  late String beginAt;
+  late DateTime beginAt;
   late String radian;
   late List<String> trailer;
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project2/screen/home/modules/comingsoon/comingsoon_item.dart';
 
 import '../../../constants/constants.dart';
 import '../../../data/data.dart';
@@ -13,25 +14,15 @@ class ComingSoon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(
         horizontal: appPadding,
       ),
+      scrollDirection: Axis.horizontal,
       child: Row(
         children: movie.movieList
             .map(
-              (e) => Builder(builder: (context) {
-                return Expanded(
-                  child: Container(
-                    height: 200,
-                    margin: const EdgeInsets.symmetric(horizontal: 4),
-                    child: Image(
-                      image: Image.asset(e.image).image,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                );
-              }),
+              (e) => ComingSoonItem(e),
             )
             .toList(),
       ),
