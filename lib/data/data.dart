@@ -11,18 +11,18 @@ class MovieData {
           id: 0,
           name: 'Kẻ Ăn Hồn',
           rating: 4.9,
-          genre: [
-            "Kinh dị"
-          ],
+          genre: ["Kinh dị"],
           beginAt: '15/12/2023',
           radian: '1h',
           director: 'Trần Hữu Tấn',
-          storyLine: 'Phim về hàng loạt cái chết bí ẩn ở Làng Địa Ngục, nơi có ma thuật cổ xưa: 5 mạng đổi bình Rượu Sọ Người. Thập Nương - cô gái áo đỏ là kẻ nắm giữ bí thuật luyện nên loại rượu mạnh nhất',
+          storyLine:
+              'Phim về hàng loạt cái chết bí ẩn ở Làng Địa Ngục, nơi có ma thuật cổ xưa: 5 mạng đổi bình Rượu Sọ Người. Thập Nương - cô gái áo đỏ là kẻ nắm giữ bí thuật luyện nên loại rượu mạnh nhất',
           image: "assets/image/ke-an-hon.jpg",
           trailer: [
             "assets/video/trailer/trailer_joker.mp4",
             "assets/video/trailer/trailer_joker.mp4",
             "assets/video/trailer/trailer_joker.mp4",
+            "assets/video/trailer/trailer_keanhon2.mp4",
           ],
           castList: [
             MovieCastModel(
@@ -48,13 +48,12 @@ class MovieData {
           id: 1,
           name: 'Arkie Và Ngày Mặt Trời Mất Tích',
           rating: 4.7,
-          genre: [
-            "Hoạt hình", "Phiêu lưu"
-          ],
+          genre: ["Hoạt hình", "Phiêu lưu"],
           beginAt: '05/01/2023',
           radian: '93m',
           director: 'Ricard Cussó',
-          storyLine: 'Trên hành trình tìm cách giải cứu cha, Arkie đối mặt không ít thách thức và khám phá ra rằng mọi thứ không giống như bề ngoài của nó. Đối thủ của cô bé cũng cực kỳ “khó nhằn”. Đó là Dr. Maybee - kẻ chủ mưu nguy hiểm đứng sau việc phá hủy sự sống trên hành tinh của Arkie. Rõ ràng, Dr. Maybee còn có âm mưu lớn hơn đang muốn thực hiện. Và chìa khóa thành công của gã chính là Blister - người có thể tái tạo sự sống cho các sinh vật nhờ vào xúc tu kỳ diệu của mình. Chuyện gì xảy ra trên hành trình Arkie giải cứu cha? Liệu rằng hai cha con có thể ngăn cản Dr. Maybee tàn phá quê hương của mình?',
+          storyLine:
+              'Trên hành trình tìm cách giải cứu cha, Arkie đối mặt không ít thách thức và khám phá ra rằng mọi thứ không giống như bề ngoài của nó. Đối thủ của cô bé cũng cực kỳ “khó nhằn”. Đó là Dr. Maybee - kẻ chủ mưu nguy hiểm đứng sau việc phá hủy sự sống trên hành tinh của Arkie. Rõ ràng, Dr. Maybee còn có âm mưu lớn hơn đang muốn thực hiện. Và chìa khóa thành công của gã chính là Blister - người có thể tái tạo sự sống cho các sinh vật nhờ vào xúc tu kỳ diệu của mình. Chuyện gì xảy ra trên hành trình Arkie giải cứu cha? Liệu rằng hai cha con có thể ngăn cản Dr. Maybee tàn phá quê hương của mình?',
           image: "assets/image/arkie-va-ngay-mat-troi-mat-tich.jpg",
           trailer: [
             "assets/video/trailer/trailer_joker.mp4",
@@ -86,7 +85,7 @@ class MovieData {
           radian: '1h24m',
           director: 'James Wan',
           storyLine:
-          "Đạo diễn James Wan và Jason Momoa trong vai Aquaman—cùng với Patrick Wilson, Amber Heard, Yahya Abdul-Mateen II và Nicole Kidman sẽ trở lại trong phần tiếp theo của bộ phim DC có doanh thu cao nhất mọi thời đại “Aquaman Và Vương Quốc Thất Lạc",
+              "Đạo diễn James Wan và Jason Momoa trong vai Aquaman—cùng với Patrick Wilson, Amber Heard, Yahya Abdul-Mateen II và Nicole Kidman sẽ trở lại trong phần tiếp theo của bộ phim DC có doanh thu cao nhất mọi thời đại “Aquaman Và Vương Quốc Thất Lạc",
           image: "assets/image/aquaman.jpg",
           trailer: [
             "assets/video/trailer/trailer_joker.mp4",

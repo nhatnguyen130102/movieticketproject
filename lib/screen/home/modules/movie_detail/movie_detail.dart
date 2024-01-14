@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 import 'package:project2/constants/constants.dart';
 
 import 'package:project2/models/movie_model.dart';
 import 'package:project2/screen/home/modules/components/star_component.dart';
-import 'package:project2/screen/home/modules/movie_detail/components/cast.dart';
-import 'package:project2/screen/home/modules/movie_detail/test.dart';
-import 'package:project2/screen/home/modules/movie_detail/trailer.dart';
 
 import 'components/arrow_back.dart';
 import 'components/backgroundwidget.dart';
+import 'components/cast_bar.dart';
+import 'components/trailer_bar.dart';
 
 class MovieDetailPage extends StatefulWidget {
   final MovieModel movie;
@@ -170,38 +168,9 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                                   ),
                                 ),
                                 buildTitle('Cast & Crew'),
-                                SingleChildScrollView(
-                                  padding: const EdgeInsets.only(
-                                    right: 20,
-                                  ),
-                                  scrollDirection: Axis.horizontal,
-                                  child: Row(
-                                    children: widget.movie.castList
-                                        .map(
-                                          (e) => CasterItem(size: size, e: e),
-                                        )
-                                        .toList(),
-                                  ),
-                                ),
+                                CastBar(widget: widget, size: size),
                                 buildTitle('Trailer and Song'),
-                                Expanded(
-                                  child: ListView.builder(
-                                    scrollDirection: Axis.horizontal,
-                                    itemCount: widget.movie.trailer.length,
-                                    itemBuilder: (context, index) {
-                                      return Padding(
-                                        padding: EdgeInsets.all(8),
-                                        child: Container(
-                                          width: size.width,
-                                          height: size.width / 3,
-                                          child: Trailer(
-                                              widget.movie.trailer[index]),
-                                        ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                                Gap(20),
+                                TrailerBar(widget: widget),
                                 // ElevatedButton(
                                 //   onPressed: () {
                                 //     // Điều hướng đến trang mới khi button được nhấn
