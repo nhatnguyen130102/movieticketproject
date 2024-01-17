@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project2/constants/constants.dart';
 import 'package:project2/data/data.dart';
@@ -31,10 +30,13 @@ class _HomeScreenState extends State<HomeScreen> {
             Header(size),
             Search(size),
             Category(size),
+            const SizedBox(height: 24),
             buildTitle('Now Playing'),
             SliderMovie(movie: movie, size: size),
+            const SizedBox(height: 24),
             buildTitle('Coming Soon'),
             ComingSoon(movie: movie),
+            const SizedBox(height: 24),
             buildTitle('Promo'),
             Promo(size: size),
           ],
@@ -43,17 +45,19 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+  //********** cần TEXT TRUNCATE ---> PROMO
+
   Padding buildTitle(String title) {
     return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: appPadding,
-        vertical: 24,
+        vertical: 12,
       ),
       child: Text(
         title,
         style: const TextStyle(
           color: white,
-          fontSize: 20,
+          fontSize: 22,
           fontWeight: FontWeight.bold,
         ),
       ),

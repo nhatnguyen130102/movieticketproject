@@ -31,7 +31,7 @@ class CasterItem extends StatelessWidget {
           Text(
             e.name,
             style: const TextStyle(
-              fontSize: 10,
+              fontSize: 12,
               color: Colors.white70,
             ),
           ),

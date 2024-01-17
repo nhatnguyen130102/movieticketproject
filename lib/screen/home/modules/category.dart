@@ -36,10 +36,10 @@ class _CategoryState extends State<Category> {
                 width: widget.size.width / 4,
                 decoration: selectedIndex == index
                     ? BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(30),
                         gradient: const LinearGradient(
                           colors: [
-                            Colors.lightBlue,
+                            Colors.blue,
                             Colors.lightBlueAccent,
                           ],
                         ),
@@ -49,6 +49,7 @@ class _CategoryState extends State<Category> {
                   genre.genreList[index].name,
                   style: const TextStyle(
                     fontSize: 20,
+                    fontWeight: FontWeight.w500,
                     color: white,
                   ),
                 ),

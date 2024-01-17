@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project2/constants/constants.dart';
 import 'package:project2/models/movie_model.dart';
+import 'package:project2/screen/home/modules/components/star_component.dart';
 
 class ComingSoonItem extends StatelessWidget {
   final MovieModel e;
@@ -30,41 +31,28 @@ class ComingSoonItem extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 12),
-                child: Container(
+              const SizedBox(height: 12),
+               Container(
                   width: 200,
-                  height: 50, // Độ cao tối đa của Text Container
                   child: Text(
                     e.name,
                     style: const TextStyle(
                       color: white,
-                      fontSize: 18,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
                       fontFamily: 'JosefinSans-VariableFont_wght.tff',
                     ),
-                    maxLines: 2, // Số dòng tối đa
+                    maxLines: 1, // Số dòng tối đa
                     overflow: TextOverflow
                         .ellipsis, // Hiển thị dấu chấm elipsis khi quá dài
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 12),
-                child: Container(
+              const SizedBox(height: 4),
+              Container(
                   width: 200,
-                  height: 50, // Độ cao tối đa của Text Container
-                  child: Text(
-                    '${e.beginAt.day}/${e.beginAt.month}/${e.beginAt.year}',
-                    style: const TextStyle(
-                      color: white,
-                      fontSize: 18,
-                    ),
-                    maxLines: 2, // Số dòng tối đa
-                    overflow: TextOverflow
-                        .ellipsis, // Hiển thị dấu chấm elipsis khi quá dài
-                  ),
+                  // Độ cao tối đa của Text Container
+                  child: StarComponent(e,1),
                 ),
-              ),
             ],
           ),
         );

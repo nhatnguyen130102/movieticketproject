@@ -64,23 +64,24 @@ class SliderMovie extends StatelessWidget {
                           Container(
                             width: size.width,
                             padding: const EdgeInsets.only(
-                              bottom: 8,
-                              left: 8,
+                              bottom: 4,
+                              left: 16,
                             ),
                             child: Text(
                               e.name,
                               style: const TextStyle(
-                                fontSize: 20,
+                                fontSize: 22,
+                                fontWeight: FontWeight.w500,
                                 color: white,
                               ),
                             ),
                           ),
                           Container(
                             margin: const EdgeInsets.only(
-                              left: 8,
-                              bottom: 8,
+                              left: 16,
+                              bottom: 16,
                             ),
-                            child: StarComponent(e),
+                            child: StarComponent(e,1),
                           ),
                         ],
                       ),

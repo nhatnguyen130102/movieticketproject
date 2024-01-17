@@ -15,20 +15,29 @@ class Header extends StatelessWidget {
         right: appPadding,
       ),
       child: SizedBox(
-        height: size.height/10,
+        height: size.height/20,
         child:  Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Text(
-              'Find Your Best \nMovie',
+            Icon(
+              Icons.local_activity,
+              color: Colors.white,
+              size: 24,
+              weight: 700,
+            ),
+            Spacer(),
+            Text(
+              'OUZ CINEMA',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold,
+                fontSize: 24
               ),
             ),
+            Spacer(),
             CircleAvatar(
-              radius: size.height/24,
+              radius: size.height/32,
               backgroundImage: AssetImage('assets/image/apes.jpeg'),
             ),
           ],

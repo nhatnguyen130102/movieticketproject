@@ -33,22 +33,24 @@ class Promo extends StatelessWidget {
             const Expanded(
               flex: 2,
               child: Padding(
-                padding: EdgeInsets.only(
-                  left: 8,
+                padding: EdgeInsets.symmetric(
+                  vertical: 16,
+                  horizontal: 20,
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Chào mừng năm mới 2024',
+                      'Chào 2024',
                       style: TextStyle(
                         color: white,
-                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 22,
                       ),
                     ),
                     Text(
-                      'Nội dung sự kiện năm mới 2024',
+                      'Sự kiện 2024',
                       style: TextStyle(
                         fontSize: 16,
                         color: white,
@@ -58,6 +60,7 @@ class Promo extends StatelessWidget {
                 ),
               ),
             ),
+            Spacer(),
             Expanded(
               child: RichText(
                 text: const TextSpan(
@@ -69,6 +72,7 @@ class Promo extends StatelessWidget {
                         fontSize: 20,
                       ),
                     ),
+                    TextSpan(text: '  '),
                     TextSpan(
                       text: '50%',
                       style: TextStyle(
@@ -86,3 +90,4 @@ class Promo extends StatelessWidget {
     );
   }
 }
+

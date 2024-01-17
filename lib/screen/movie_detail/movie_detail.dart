@@ -74,22 +74,22 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                           children: [
                             Container(
                               padding:
-                                  const EdgeInsets.only(left: 8, bottom: 8),
+                                  const EdgeInsets.only(left: 18, bottom: 6),
                               width: size.width,
                               child: Text(
                                 widget.movie.name.toString(),
                                 style:
-                                    const TextStyle(fontSize: 18, color: white),
+                                    const TextStyle(fontSize: 24, fontWeight: FontWeight.w600,color: white),
                               ),
                             ),
                             Container(
-                              margin: const EdgeInsets.only(left: 8, bottom: 8),
-                              child: StarComponent(widget.movie),
+                              margin: const EdgeInsets.only(left: 18, bottom: 10),
+                              child: StarComponent(widget.movie, 5),
                             ),
                             Container(
                               padding: const EdgeInsets.only(
-                                left: 8,
-                                bottom: 8,
+                                left: 18,
+                                bottom: 4,
                               ),
                               width: size.width,
                               child: Text(
@@ -98,8 +98,8 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                             ),
                             Container(
                               padding: const EdgeInsets.only(
-                                left: 8,
-                                bottom: 8,
+                                left: 18,
+                                bottom: 4,
                               ),
                               width: size.width,
                               child: Text(
@@ -122,11 +122,14 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                               },
                               style: ElevatedButton.styleFrom(
                                 primary: Colors.amber,
-                                onPrimary: Colors.white,
                               ),
                               child: const Text(
-                                'Booking',
-                                style: myTextStyle,
+                                'Book Now',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17,
+                                  color: Colors.black
+                                ),
                               ),
                             ),
                           ],
@@ -176,7 +179,6 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                               children: [
                                 buildTitle('Synopsis'),
                                 Container(
-                                  height: 100,
                                   width: size.width,
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(
@@ -186,16 +188,18 @@ class _MovieDetailPageState extends State<MovieDetailPage>
                                       child: Text(
                                         widget.movie.storyLine,
                                         style: const TextStyle(
-                                          fontSize: 15,
-                                          color: white,
-                                          fontWeight: FontWeight.w200,
+                                          fontSize: 16,
+                                          color: Colors.white70,
+                                          fontWeight: FontWeight.w400,
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
+                                const SizedBox(height: 8),
                                 buildTitle('Cast & Crew'),
                                 CastBar(widget: widget, size: size),
+                                const SizedBox(height: 8),
                                 buildTitle('Trailer and Song'),
                                 TrailerBar(widget: widget),
                                 // ElevatedButton(

@@ -4,8 +4,9 @@ import 'package:project2/models/movie_model.dart';
 
 class StarComponent extends StatelessWidget {
   final MovieModel e;
+  final int countStar;
   const StarComponent(
-    this.e, {
+    this.e, this.countStar,{
     super.key,
   });
 
@@ -14,7 +15,7 @@ class StarComponent extends StatelessWidget {
     return Row(
       children: [
         Row(
-          children: List.generate(5, (index) {
+          children: List.generate(countStar, (index) {
             int fullStars = e.rating.floor();
             double remainder = e.rating - fullStars;
             if (index < fullStars) {
@@ -38,10 +39,12 @@ class StarComponent extends StatelessWidget {
             }
           }),
         ),
+        const SizedBox(width: 4),
         Text(
-          '(${e.rating})',
+          '${e.rating}',
           style: const TextStyle(
             color: white,
+            fontWeight: FontWeight.w400,
             fontSize: 20,
           ),
         ),
