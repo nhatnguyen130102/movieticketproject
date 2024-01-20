@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project2/constants/constants.dart';
 import 'package:project2/models/movie_model.dart';
@@ -29,12 +28,12 @@ class SelectMovie extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 16, top: 20),
+                  padding: EdgeInsets.only(left: 20, top: 20),
                   child: IconButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: Icon(Icons.arrow_back_ios, size: 20),
                     color: white,
                   ),
                 ),

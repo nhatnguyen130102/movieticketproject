@@ -1,6 +1,47 @@
+import 'package:intl/intl.dart';
+
 import '../models/cast_model.dart';
 import '../models/genre_model.dart';
 import '../models/movie_model.dart';
+import '../models/date_model.dart';
+
+final now = DateTime.now();
+final dateNow = DateFormat('dd-MM').format(now);  //E.g. 22/2
+final dayOfWeekNow = DateFormat('EEEE').format(now); //E.g. Tuesday
+
+final next1 = now.add(const Duration(days: 1)); //+ 1 days from now
+final next2 = now.add(const Duration(days: 2)); //+ 2 days from now
+final next3 = now.add(const Duration(days: 3)); //+ 3 days from now
+
+final dateNext1 = DateFormat('dd-MM').format(next1);
+final dateNext2 = DateFormat('dd-MM').format(next2);
+final dateNext3 = DateFormat('dd-MM').format(next3);
+
+final dayOfWeekNext1 = DateFormat('EEEE').format(next1);
+final dayOfWeekNext2 = DateFormat('EEEE').format(next2);
+final dayOfWeekNext3 = DateFormat('EEEE').format(next3);
+
+//-----------------------------------------------------------------
+
+class DateData {
+  List<DateModel> dateList = [];
+
+  DateData() {
+    dateList.add(
+      DateModel(date: dateNow, dayOfWeek: dayOfWeekNow)
+    );
+    dateList.add(
+        DateModel(date: dateNext1, dayOfWeek: dayOfWeekNext1)
+    );
+    dateList.add(
+        DateModel(date: dateNext2, dayOfWeek: dayOfWeekNext2)
+    );
+    dateList.add(
+        DateModel(date: dateNext3, dayOfWeek: dayOfWeekNext3)
+    );
+  }
+}
+
 
 class MovieData {
   List<MovieModel> movieList = [];

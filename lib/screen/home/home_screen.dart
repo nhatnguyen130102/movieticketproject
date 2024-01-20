@@ -55,11 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Text(
         title,
-        style: const TextStyle(
-          color: white,
-          fontSize: 22,
-          fontWeight: FontWeight.bold,
-        ),
+        style: myTextStyle2,
       ),
     );
   }
